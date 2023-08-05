@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Public and Private Playlists</title>
+  <link rel="stylesheet" href="pStyle.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create a Playlist</h1>
+    <form id="playlistForm">
+      <input type="text" id="playlistName" placeholder="Playlist Name" required>
+      <label>
+        <input type="radio" name="privacy" value="public" checked> Public
+      </label>
+      <label>
+        <input type="radio" name="privacy" value="private"> Private
+      </label>
+      <button type="submit">Create Playlist</button>
+    </form>
+    <h2>Your Playlists</h2>
+    <ul id="playlistList"></ul>
+  </div>
+  <script src="pScript.js"></script>
+</body>
+</html>
